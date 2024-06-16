@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio_stylesheet.css">
+    <!-- logo vises i vinduet -->
+    <link rel="icon" href="img/portfolio_logo.png">
+    <title>Portfolio af Jessica Natasja</title>
+</head>
+<body>
+
+  <!-- Velkommens Header -->
+  <div class="header">
+    <h1>Velkommen<br></h1>
+    <h3>til min Portfolio</h3>
+    <img class="headerimg" src="img/portfolio_logo.png" width="200px">
+    <h4>Af Jessica Natasja</h4>
+  </div>
+
+  <!-- Sticky navigation bar -->
+  <div id="navbar">
+    <a class="active" href="portfolio.html">Forside</a>
+    <a href="personlig_arb.html">Personlige Arb.</a>
+    <a href="alle_semestre.html">Semestre</a>
+  </div> 
+  
+  <!-- informatsion -->
+  <div class="overblik">
+    <h3 class="titleOverblik">Se mine fremskridt</h3>
+    <p> 
+      Hej mit navn er Jessica Natasja. 
+      Og er i gang med multimeddegner uddannelsen.
+      Jeg har valgt at tage dennne uddannelsen for jeg har en passion for programming, desing og visualisere.
+      Som jeg opdaget da jeg var i praktik, Skiltemager.
+    </p>  
+  </div> 
+
+  <!-- Valg hvilket du ville læse mere om -->
+  <div class="back">
+    <div class="valg">
+      <a href="første_semester.html"><img class="sem" src="img/1.semester_portræt.jpg" width="200px"></a>
+      <button class="btn"><b>1.Semester</b></button>
+    </div>
+  </div>
+ 
+
+  <div class="valg">
+    <a href="andet_semester.html"><img class="sem" src="img/2.semester_portræt.jpg" width="200px"></a>
+    <div class="centered"><b>2.Semester</b></div>
+  </div>
+
+  <div class="valg">
+    <a href="tredje_semester.html"><img class="sem" src="img/3.semester_portræt.jpg" width="200px"></a>
+    <div class="centered"><b>3.Semester</b></div>
+  </div>
+
+  <div class="valg">
+    <a href="fjerde_semester.html"><img class="sem" src="img/4.semester_portræt.jpg" width="200px"></a>
+    <div class="centered"><b>4.Semester</b></div>
+  </div>
+ 
+  <!-- Footer -->
+  <footer> 
+    <p>Copyright &COPY; 2024 by jessica-natasja.dk | All Rights Reserved.</p>
+  </footer>
+
+  <!-- JAVA SCRIPT  content -->
+    <!-- Sticky Navbar -->
+    <script>
+      // Når brugeren ruller ned på siden, ativer myFunction.
+      window.onscroll = function() {myFunction()};
+        
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+        
+      // Tilføjer sticky class til navbar når du kommer til dens stilling. Fjern "sticky" når du forlader dens stilling.
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+
+            
+</body>
+</html>

@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(11, 4, 32);
+    color: white;
+}
+
+/* Footer */
+footer{
+    padding: 10px;
+    background-color: rgb(0, 238, 255);
+    color: black;
+    text-align: center;    
+}
+
+/* CSS til 1.semester */
+
+
+/* CSS til 2.semester */
+
+
+/* CSS til 3.semester / 4.semester */
+.comingSoon{
+    background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
+    margin: 30px 25px;
+    border-radius: 15px;
+    height: 795px;
+}
+.titleComingSoon{
+    color: black;
+    text-shadow: 2px 2px 5px white;
+    padding-top: 50%;
+    text-align: center;
+    font-size: 40px;
+}
+.comingSoon h3{
+    text-shadow: 2px 2px 5px black;
+    padding: 5% 10%;
+}
+.hjemKnap{
+    display: flex;
+    justify-content: space-around;
+    padding: 4%;
+}
+.hjemKnap a{
+    background-color: rgb(11, 4, 32);
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    padding: 5%;
+    border-radius: 15px;
+}
+.hjemKnap a:hover {
+    background-color: rgb(0, 238, 255);
+    color: black;
+}
+
+
+

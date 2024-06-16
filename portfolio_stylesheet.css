@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* farve valg 
+mørke blå
+hex #0B0420
+
+lyse blå
+hex #00eeff
+
+mørke blå
+rgb(11, 4, 32);
+
+lyse blå
+rgb(0, 238, 255);
+
+lyserød 
+rgb(255, 0, 179)
+
+color: white;
+*/
+
+body {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(11, 4, 32);
+    color: white;
+}
+  
+/* Sticky navigation bar*/
+#navbar {
+    overflow: hidden;
+    background-color: rgb(11, 4, 32);
+}
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+}
+#navbar a:hover {
+    background-color: rgb(0, 238, 255);
+    color: black;
+}
+#navbar a.active {
+    background-color: rgb(0, 238, 255);
+    color: black;
+    font-size: 26px;
+    font-weight: bold;
+}  
+.content {
+    padding: 16px;
+}  
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}  
+.sticky + .content {
+    padding-top: 60px;
+}
+
+/* Footer */
+footer{
+    padding: 10px;
+    background-color: rgb(0, 238, 255);
+    color: black;
+    text-align: center;    
+}
+
+/* Header over Sticky nav */
+.header {
+    background-color: rgb(0, 238, 255);
+    color: black;
+    text-shadow: 2px 2px 5px white;
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+.headerimg{
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.header h4 {
+    margin-bottom: 10px;
+}
+
+
+/* CSS til portfolio.html */
+/* informatsion om mig */
+.om{
+    background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
+    margin: 50px 25px;
+    border-radius: 15px;
+}
+.titleOm{
+    color: black;
+    text-shadow: 2px 2px 5px white;
+    text-align: center;
+    font-size: 40px;
+    padding: 4%;
+}
+.om p{
+    text-shadow: 2px 2px 5px black;
+    padding: 4%;
+}
+.imgOm{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+  
+/* Kodnings Skills */
+.skills{
+    min-height: auto;
+    background-color: rgb(255, 0, 179);
+    margin: 50px 25px;
+    padding: 15px;
+    border-radius: 15px;
+    color: black;
+}
+.skills .skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.skills-row .skills-column {
+    flex: 400px;
+} 
+.skills-column .title {
+    text-shadow: 2px 2px 5px white;
+    font-size: 40px;
+    margin: 5% 25px;
+}
+.skills-box .skills-oplysning {
+    position: relative;
+    border: 10px solid rgb(11, 4, 32);;
+    border-radius: 20px;
+    padding: 8px 20px;
+    z-index: 1;
+    overflow: hidden;
+}
+.skills-box .skills-oplysning::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(0, 238, 255);
+    z-index: -1;
+    transition: .5s;
+}
+.skills-box .skills-oplysning:hover::before {
+    width: 100%;
+}
+/* Degin på Skills oplynger */
+.skills-oplysning .fremskridt {
+    padding: 10px 0;
+}
+.skills-oplysning .fremskridt h3 {
+    font-size: 25px;
+    text-shadow: 2px 2px 2px white;
+    display: flex;
+    justify-content: space-between;
+}
+.skills-oplysning .fremskridt h3 span {
+    color: rgb(11, 4, 32);
+}
+.skills-oplysning .fremskridt .bar {
+    height: 30px;
+    border-radius: 10px;
+    border: 4px solid rgb(11, 4, 32);
+    padding: 4px;
+    margin: 10px 0;
+}
+.skills-oplysning .fremskridt .bar span {
+    display: block;
+    height: 100%;
+    border-radius: 4px;
+    background-color: rgb(11, 4, 32);
+}
+/* fylde ind med procenter */
+.skills-column:nth-child(1) .skills-oplysning .fremskridt:nth-child(1) .bar span {
+    width: 85%;
+}
+.skills-column:nth-child(1) .skills-oplysning .fremskridt:nth-child(2) .bar span {
+    width: 70%;
+}
+.skills-column:nth-child(1) .skills-oplysning .fremskridt:nth-child(3) .bar span {
+    width: 62%;
+}
+.skills-column:nth-child(1) .skills-oplysning .fremskridt:nth-child(4) .bar span {
+    width: 55%;
+}
+
+/* kontaktformular */
+.kontaktBoks{
+    background-image: linear-gradient(rgb(255, 0, 179),rgb(0, 238, 255));
+    margin: 50px 25px;
+    padding-bottom: 4%;
+    border-radius: 15px;
+}
+.titleKontakt{
+    color: black;
+    text-shadow: 2px 2px 5px white;
+    text-align: center;
+    font-size: 40px;
+    padding: 4%;
+}
+.kontaktBoks h4{
+    font-size: 25px;
+    text-shadow: 2px 2px 2px black;
+    padding: 2% 4%;
+}
+.kontaktBoks p {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    padding: 2% 6%;
+    margin-bottom: 2%;
+}
+.kontaktBoks a {
+    color: white;
+}
+
+
+/* CSS til personlig_arb.html */
+/* informatsion om Personlige arbejde */
+.mit{
+    background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
+    margin: 50px 25px;
+    border-radius: 15px;
+}
+.titleMit{
+    color: black;
+    text-shadow: 2px 2px 5px white;
+    text-align: center;
+    font-size: 40px;
+    padding: 4%;
+}
+.mit p{
+    text-shadow: 2px 2px 5px black;
+    padding: 4%;
+}
+.mitKnap{
+    display: flex;
+    justify-content: space-around;
+    padding: 8%;
+}
+.mitKnap a{
+    background-color: rgb(11, 4, 32);
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 5%;
+    border-radius: 15px;
+}
+.mitKnap a:hover {
+    background-color: rgb(0, 238, 255);
+    color: black;
+}
+
+/* Min Desingboks */
+.desingboks{
+    background-image: linear-gradient(rgb(255, 0, 179),rgb(255, 0, 179),rgb(0, 238, 255),rgb(0, 238, 255));
+    margin: 50px 25px;
+    border-radius: 15px;
+}
+.titleDesing{
+    color: black;
+    text-shadow: 2px 2px 5px white;
+    text-align: center;
+    font-size: 40px;
+    padding: 4%;
+}
+.desingboks p{
+    text-shadow: 2px 2px 5px black;
+    padding: 4%;
+}
+.imgDesing{
+    text-align: center;
+}
+.imgDesing img{
+    margin: 2% 0% 5% 0%;
+}
+
+/* Min Desingboks */
+.skitseboks{
+    background-image: linear-gradient(rgb(0, 238, 255),rgb(0, 238, 255),rgb(255, 0, 179),rgb(255, 0, 179));
+    margin: 50px 25px;
+    border-radius: 15px;
+}
+.titleSkitse{
+    color: black;
+    text-shadow: 2px 2px 5px white;
+    text-align: center;
+    font-size: 40px;
+    padding: 4%;
+}
+.skitseboks p{
+    text-shadow: 2px 2px 5px black;
+    padding: 4%;
+}
+.imgSkitse{
+    text-align: center;
+}
+.imgSkitse img{
+    margin: 2% 0% 5% 0%;
+}
+
+/* CSS til alle_semestre.html */
+/* overblik */
+.overblik{
+    background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
+    margin: 50px 25px;
+    border-radius: 15px;
+}
+.titleOverblik{
+    color: black;
+    text-shadow: 2px 2px 5px white;
+    text-align: center;
+    font-size: 40px;
+    padding: 4%;
+}
+.overblik p{
+    text-shadow: 2px 2px 5px black;
+    padding: 4%;
+}
+
+/* billeder til at komme hen på semesterne */
+
+.back{
+    background-image: linear-gradient(rgb(255, 0, 179),rgb(0, 238, 255));
+    margin: 50px 25px;
+    padding-bottom: 4%;
+    padding-top: 4%;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+}
+
+/* .sem{
+    width: 90%; 
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+} */
+
+.valg {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+  
+.valg img {
+    width: 100%;
+    height: auto;
+}
+  
+.valg .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+  
+.valg .btn:hover {
+    background-color: black;
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+    .skills{
+        min-height: auto;
+        color: black;
+    }
+   
+
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio_stylesheet.css">
+    <script src="https://kit.fontawesome.com/1cc8df4c3e.js" crossorigin="anonymous"></script>
+    <!-- logo vises i vinduet -->
+    <link rel="icon" href="img/portfolio_logo.png">
+    <title>Portfolio af Jessica Natasja</title>
+</head>
+<body>
+
+  <!-- Velkommens Header -->
+  <div class="header">
+    <h1>Velkommen<br></h1>
+    <h3>til min Portfolio</h3>
+    <img class="headerimg" src="img/portfolio_logo.png" width="200px">
+    <h4>Af Jessica Natasja</h4>
+  </div>
+
+  <!-- Sticky navigation bar -->
+  <div id="navbar">
+    <a class="active" href="portfolio.html">Forside</a>
+    <a href="personlig_arb.html">Personlige Arb.</a>
+    <a href="alle_semestre.html">Semestre</a>
+  </div>
+
+  <!-- informatsion -->
+  <div class="om">
+    <h3 class="titleOm">Hvem er jeg </h3>
+    <p> 
+      Hej mit navn er Jessica Natasja. 
+      Og er i gang med multimeddegner uddannelsen.
+      Jeg har valgt at tage dennne uddannelsen for jeg har en passion for programming, desing og visualisere.
+      Som jeg opdaget da jeg var i praktik, Skiltemager.
+      <br><br>
+      Her kan i følge med på mine fremskid, og personligt opgaver. 
+    </p>  
+    <br>
+    <!-- icon  --> 
+    <p><i class="fa-solid fa-cake-candles"></i>  03.07.2002 (22 år)</p>
+    <p><i class="fa-solid fa-earth-europe"></i>  Danmark - Nordsjæland</p>
+      
+    <div class="imgOm">
+      <img src="img/portræt.png" width="200px" >
+    </div>
+    
+  </div>  
+  
+  <!-- Skils bokse --> 
+  <div class="skills" id="skills">
+    <div class="skills-row">
+      <div class="skills-column">
+        <h3 class="title">Kodning Skills</h3>
+
+        <div class="skills-box">
+          <div class="skills-oplysning">
+
+            <div class="fremskridt">
+              <h3>HTML <span>85%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+
+            <div class="fremskridt">
+              <h3>CSS <span>70%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+
+            <div class="fremskridt">
+              <h3>JavaScript <span>62%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+
+            <div class="fremskridt">
+              <h3>Ui/Ux <span>55%</span></h3>
+              <div class="bar"><span></span></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Kontakt Mig -->
+  <div class="kontaktBoks">
+    <h3 class="titleKontakt">Kontakt Mig</h3>
+    <h4>Mail:</h4>
+    <p>Jessicanatasja02@gmail.com</p>
+    <h4>Telefon:</h4>
+    <p>+ 61 16 02 93</p>
+    <h4>Linkedin:</h4>
+    <p><a href="https://www.linkedin.com/in/jessica-natasja-a687b729a/">@jessicaNatasja</a></p>
+  </div>
+
+  <!-- Footer -->
+  <footer> 
+    <p>Copyright &COPY; 2024 by jessica-natasja.dk | All Rights Reserved.</p>
+  </footer>
+
+  <!-- JAVA SCRIPT  content -->
+    <!-- Sticky Navbar -->
+    <script>
+      // Når brugeren ruller ned på siden, ativer myFunction.
+      window.onscroll = function() {myFunction()};
+        
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+        
+      // Tilføjer sticky class til navbar når du kommer til dens stilling. Fjern "sticky" når du forlader dens stilling.
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+
+            
+</body>
+</html>
