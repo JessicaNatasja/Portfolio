@@ -2,35 +2,223 @@
     margin: 0;
     padding: 0;
 }
+/* farve valg 
+mørke blå
+rgb(11, 4, 32);
+
+lyse blå
+rgb(0, 238, 255);
+
+lyserød 
+rgb(255, 0, 179)
+
+color: white;
+*/
+
 body {
-    margin: 0;
-    font-size: 24px;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(11, 4, 32);
-    color: white;
+  margin: 0;
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgb(11, 4, 32);
+  color: white;
+}
+
+/* Header over Sticky nav */
+.header {
+  background-color: rgb(0, 238, 255);
+  color: black;
+  text-shadow: 2px 2px 5px white;
+  padding: 10px;
+  font-size: 40px;
+  text-align: center;
+}
+.headerimg{
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.header h4 {
+  margin-bottom: 10px;
+}
+
+/* Sticky navigation bar*/
+#navbar {
+  overflow: hidden;
+  background-color: rgb(11, 4, 32);
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: bold;
+}
+#navbar a:hover {
+  background-color: rgb(0, 238, 255);
+  color: black;
+}
+#navbar a.active {
+  background-color: rgb(0, 238, 255);
+  color: black;
+  font-size: 26px;
+  font-weight: bold;
+}  
+.content {
+  padding: 16px;
+}  
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}  
+.sticky + .content {
+  padding-top: 60px;
 }
 
 /* Footer */
 footer{
-    padding: 10px;
-    background-color: rgb(0, 238, 255);
-    color: black;
-    text-align: center;    
+  padding: 10px;
+  background-color: rgb(0, 238, 255);
+  color: black;
+  text-align: center;    
 }
 
-/* CSS til 1.semester */
+
+/* CSS til Første_semester.html */
+/* informatsion om mig */
+.overblik{
+  background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
+  margin: 50px 25px;
+  border-radius: 15px;
+}
+.titleOverblik{
+  color: black;
+  text-shadow: 2px 2px 5px white;
+  text-align: center;
+  font-size: 40px;
+  padding: 4%;
+}
+.overblik p{
+  text-shadow: 2px 2px 5px black;
+  padding: 4%;
+}
+
+/* flow overskrifter */
+.flow{
+  background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
+  margin: 50px 25px;
+}
+.flow h3{
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+  font-size: 40px;
+  padding: 4% 4% 0 4%;
+}
+.flow p{
+  text-shadow: 2px 2px 5px black;
+  font-size: 30px;
+  padding: 4%;
+  text-align: center;
+}
 
 
-/* CSS til 2.semester */
+/* flow 1 */
+.flow1{
+  background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
+  margin: 50px 25px; 
+  border-radius: 15px;
+}
+.titleFlow{
+  color: black;
+  text-shadow: 2px 2px 5px white;
+  text-align: center;
+  font-size: 40px;
+  padding: 5%;
+}
+.flow1 p{
+  text-shadow: 2px 2px 5px black;
+  padding: 4%;
+}
+.flow1 h2{
+  color: black;
+  text-shadow: 2px 2px 5px white;
+  padding: 4%;
+}
+.flow1 li{
+  text-shadow: 2px 2px 5px black;
+  padding: 4%;
+}
+.tryk{
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+}
+
+/* billeder i flow 1 */
+.flow1img{
+  padding: 3px;
+}
+.flow1Fod{
+  margin: 5% 11% ;
+  padding-bottom: 4%;
+}
+
+/* billede tranformatison */
+
+.flow1ToIEn{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4%;
+}
+.image1{
+  display: block;
+  height: auto;
+  margin: 2%;
+}
+.overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+.flow1ToIEn:hover .overlay {
+  opacity: 1;
+}
+
+/* 2 billede i flow 1 */
+
+div.scroll-container {
+  text-align: center;
+  margin: 2%;
+  padding-bottom: 4%;
+  overflow: auto;
+  white-space: nowrap;
+  
+}
+div.scroll-container img {
+  padding: 10px;
+}
 
 
-/* CSS til 3.semester / 4.semester */
+
+
+/* CSS til Andet_semester.html */
+/* informatsion om mig */
+
+/* CSS til Tredje og Fjerde semester */
+/* vente side */
 .comingSoon{
     background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
     margin: 30px 25px;
     border-radius: 15px;
     height: 795px;
 }
+
 .titleComingSoon{
     color: black;
     text-shadow: 2px 2px 5px white;

@@ -3,9 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="semestre_stylesheet.css">
+    <!-- logo vises i vinduet -->
+    <link rel="icon" href="img/portfolio_logo.png">
+    <title>Første Semester</title>
 </head>
 <body>
+
+  <!-- Velkommens Header -->
+  <div class="header">
+    <h1>Velkommen<br></h1>
+    <h3>til min Portfolio</h3>
+    <img class="headerimg" src="img/portfolio_logo.png" width="200px">
+    <h4>Af Jessica Natasja</h4>
+  </div>
+
+  <!-- Sticky navigation bar -->
+  <div id="navbar">
+    <a class="active" href="portfolio.html">Forside</a>
+    <a href="personlig_arb.html">Personlige Arb.</a>
+    <a href="alle_semestre.html">Semestre</a>
+  </div> 
+  
+  <!-- Flow 1 -->
+  <div class="flow">
+    <h3 id="flow1">Flow 1</h3>
+    <p>DIGITAL BILLEDE BEHANDLING OG WEBPROTOYPE</p>
+    <p>Særligt fokus på Adobe Photoshop og Figma</p>
+  </div>  
+
+  <div class="flow1">
+    <h3 class="titleFlow">Billede Behandling</h3>
+    <h2>Foodie shot</h2>
+    <p> 
+      This small exercise aimed to teach us Photoshop skills, 
+      specifically how to merge images seamlessly to create a 
+      new composite image. "The task was straightforward: 
+      craft a morning tableau using diverse copyright-free images.
+    </p> 
+    <img class="flow1img" src="img_1.s/fod_foto_2.png" width="180px">
+    <img class="flow1img" src="img_1.s/fod_foto_1.jpg.png" width="180px">
+  
+    <p>And this is the outcome: </p>
+
+    <img class="flow1Fod" src="img_1.s/fod_foto_3.png" width="300px">
     
+  </div>  
+
+  <div class="flow1">
+    <h3 class="titleFlow">Billede Behandling</h3>
+    <h2>Shot af blomst</h2>
+    <p>
+      Before and after
+      In this exercise we had to go out and take a picture to photoshop with a few goals and criterias to fufill:
+      
+      <li>Remove an element while also filling out the remove area</li>
+      <li>Add an element but make it seamless so it looks like it belongs</li>
+      <li>Adjust the hue and saturation or add a filter</li>
+      <li>Crop and adjust tje horizontal line if the image is crooked</li>
+      <li>Format the image aspect ratio to be 4:3 or 3:4 and a image size of 1 M pixel or less</li>
+    </p>
+    <p class="tryk">Give the button a pres and see if you can spot all the differences!</p>
+
+    <div class="flow1ToIEn">
+      <img src="img_1.s/flow1opgave.jpg" width="300px" class="image1">
+      <div class="overlay">
+        <img src="img_1.s/flow1opgave-Recovered.jpg" width="300px" height="400">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="flow1">
+    <h3 class="titleFlow">Webprotoype</h3>
+    <h2>Shot af blomst</h2>
+    <p> 
+      Event for new students
+      The prompt for this exercise was:
+      Create a prototype for a website about an event for new students in Copenhagen.
+      We got inspired by a recent event our own school had, which was Tivoli themed.
+      So, that set the stage for our event, and now it's off to the races, trying to figure out Figma for the first time!
+    </p> 
+    <p> gruppe: Bianca,Oliver og Jessica</p>
+    <div class="scroll-container">
+      <img src="img_1.s/web_design_forside.jpg"  width="300" >
+      <img src="img_1.s/web_design_tilmedling.jpg"  width="300" >
+      <img src="img_1.s/web_design_bekraftelse.jpg"  width="300" >
+      <img src="img_1.s/web_design_praktiskinfo.png.jpg"  width="300" >
+      <img src="img_1.s/web_design_kontakt.png.jpg"  width="300" >
+      <img src="img_1.s/web_design_maps.jpg"  width="300" >
+    </div>
+  </div>
+   
+  <!-- Flow 2 -->
+  <div class="flow">
+    <h3>Flow 2 </h3>
+    <p>VISUELT KONCEPT TIL DIGITALE OG PRINTEDE MEDIER</p>
+    <p>Særligt fokus på Adobe Photoshop, inlustrater og Figma</p>
+  </div>   
+
+ 
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer> 
+    <p>Copyright &COPY; 2024 by jessica-natasja.dk | All Rights Reserved.</p>
+  </footer>
+    
+  <!-- JAVA SCRIPT  content -->
+    <!-- Sticky Navbar -->
+    <script>
+      // Når brugeren ruller ned på siden, ativer myFunction.
+      window.onscroll = function() {myFunction()};
+        
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+        
+      // Tilføjer sticky class til navbar når du kommer til dens stilling. Fjern "sticky" når du forlader dens stilling.
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+
+
 </body>
 </html>
