@@ -105,10 +105,15 @@ footer{
   padding: 4%;
 }
 
-/* flow overskrifter */
-.flow{
+/* flow overskrifter til de forskelige flow*/
+.flowB{
   background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
+  padding: 2%;
+}
+.flow{
+  background-color: rgb(11, 4, 32);
   margin: 50px 25px;
+  border-radius: 15px;
 }
 .flow h3{
   text-shadow: 2px 2px 5px black;
@@ -123,8 +128,8 @@ footer{
   text-align: center;
 }
 
-
-/* flow 1 */
+/* flow 1  */
+/* flow 1 standret ting*/
 .flow1{
   background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
   margin: 50px 25px; 
@@ -164,8 +169,7 @@ footer{
   padding-bottom: 4%;
 }
 
-/* billede tranformatison */
-
+/* billede tranformatison  */
 .flow1ToIEn{
   position: relative;
   display: flex;
@@ -190,25 +194,91 @@ footer{
   opacity: 1;
 }
 
-/* 2 billede i flow 1 */
-
-div.scroll-container {
+/* rolle billeder flow 1 */
+.scroll-container {
   text-align: center;
   margin: 2%;
   padding-bottom: 4%;
   overflow: auto;
   white-space: nowrap;
-  
 }
-div.scroll-container img {
+.scroll-container img {
   padding: 10px;
 }
+
+
+
+/* flow 2 */
+/* flow 2 standret ting */
+.flow2{
+  background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
+  margin: 50px 25px; 
+  border-radius: 15px;
+}
+.titleFlow{
+  color: black;
+  text-shadow: 2px 2px 5px white;
+  text-align: center;
+  font-size: 40px;
+  padding: 5%;
+}
+.flow2 p{
+  text-shadow: 2px 2px 5px black;
+  padding: 4%;
+}
+.flow2 h2{
+  color: black;
+  text-shadow: 2px 2px 5px white;
+  padding: 4%;
+}
+.flow2 li{
+  text-shadow: 2px 2px 5px black;
+  padding: 4%;
+}
+
+/* Lp cover og plade billede */
+.teaser{
+  margin: 2%; 
+  padding: 4%;
+}
+.lp-showcase{
+  display: flex;
+  flex-direction: column;
+}
+.lp-showcase-container img{
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.lp-showcase-container img:nth-child(1){
+  z-index: +1;
+}
+.lp-showcase-container img:nth-child(2){
+  margin-left: -15rem;
+  filter: brightness(50%);
+}
+.lp-showcase-container:hover img:nth-child(2){
+  transform: translate(10rem) rotateZ(30deg);
+  filter: brightness(100%);
+}
+
+/* billeder i flow 1 */
+.færdigVersion{
+  margin: 5% 11% ;
+  padding-bottom: 4%;
+}
+
+
+
 
 
 
 
 /* CSS til Andet_semester.html */
 /* informatsion om mig */
+
+
+
+
 
 /* CSS til Tredje og Fjerde semester */
 /* vente side */
