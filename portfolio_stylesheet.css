@@ -17,64 +17,46 @@ color: white;
 
 body {
     margin: 0;
-    font-size: 24px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
     background-color: rgb(11, 4, 32);
     color: white;
 }
 
-/* Header over Sticky nav */
+/* Header over nav */
 .header {
-    background-color: rgb(0, 238, 255);
+    background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
     color: black;
     text-shadow: 2px 2px 5px white;
-    padding: 10px;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-}
-.headerimg{
-    margin: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.header h4 {
-    margin-bottom: 10px;
+    padding: 3%;
+    margin: 4%;
+    border-radius: 20px;
 }
   
-/* Sticky navigation bar*/
-#navbar {
+/* Navigation bar*/
+.topnav {
     overflow: hidden;
-    background-color: rgb(11, 4, 32);
-}
-#navbar a {
+    background-color: rgb(255, 0, 179);
+    margin: 4%;
+    border-radius: 20px;
+} 
+.topnav a {
     float: left;
     display: block;
-    color: white;
+    color: #f2f2f2;
     text-align: center;
-    padding: 10px;
+    padding: 14px 16px;
     text-decoration: none;
-    font-size: 26px;
-    font-weight: bold;
+    font-size: 28px;
 }
-#navbar a:hover {
-    background-color: rgb(0, 238, 255);
-    color: black;
-}
-#navbar a.active {
-    background-color: rgb(0, 238, 255);
-    color: black;
-    font-size: 26px;
-    font-weight: bold;
-}  
-.content {
-    padding: 16px;
-}  
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}  
-.sticky + .content {
-    padding-top: 60px;
+.topnav a:hover {
+    background-color: rgb(11, 4, 32);
+    color: white;
+}   
+.topnav .icon {
+    display: none;
 }
 
 /* Footer */
@@ -85,39 +67,49 @@ footer{
     text-align: center;    
 }
 
-
 /* CSS til portfolio.html */
-/* overblik over alle_semesterne og portfolio*/
-.overblik{
-    background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
-    margin: 50px 25px;
-    border-radius: 15px;
-}
-.titleOverblik{
+.omkringMig{
+    background-image: linear-gradient(rgb(255, 0, 179),rgb(0, 238, 255));
     color: black;
     text-shadow: 2px 2px 5px white;
+    font-size: 30px;
     text-align: center;
-    font-size: 40px;
-    padding: 4%;
+    padding: 6%;
 }
-.overblik p{
+.omkringMig h4{
+    color: white;
     text-shadow: 2px 2px 5px black;
-    padding: 4%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: left;
 }
-.imgOm{
+.imgMigInfo{
+    background-color:rgb(11,4,32);
+    border-radius: 10px;
     display: flex;
-    justify-content: center;
-    padding: 5%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.infoIcon p {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    height: 100px;
 }
 
-  
+/* boks så det står pænt  */
+.pcVersion{
+    display: block;
+}
+
 /* Kodnings Skills */
 .skills{
     min-height: auto;
-    background-color: rgb(255, 0, 179);
-    margin: 50px 25px;
-    padding: 15px;
-    border-radius: 15px;
+    background-color:rgb(0, 238, 255);
+    padding: 3%;
+    margin: 4%;
+    border-radius: 20px;
     color: black;
 }
 .skills .skills-row {
@@ -128,16 +120,18 @@ footer{
 .skills-row .skills-column {
     flex: 400px;
 } 
-.skills-column .title {
+.skills-column {
+    color: black;
     text-shadow: 2px 2px 5px white;
-    font-size: 40px;
-    margin: 5% 25px;
+    font-size: 25px;
+    text-align: center;
 }
 .skills-box .skills-oplysning {
     position: relative;
     border: 10px solid rgb(11, 4, 32);;
     border-radius: 20px;
     padding: 8px 20px;
+    margin-top: 2%;
     z-index: 1;
     overflow: hidden;
 }
@@ -148,7 +142,7 @@ footer{
     left: 0;
     width: 0;
     height: 100%;
-    background: rgb(0, 238, 255);
+    background: rgb(255, 0, 179);
     z-index: -1;
     transition: .5s;
 }
@@ -197,60 +191,106 @@ footer{
 
 /* kontaktformular */
 .kontaktBoks{
-    background-image: linear-gradient(rgb(255, 0, 179),rgb(0, 238, 255));
-    margin: 50px 25px;
-    padding-bottom: 4%;
-    border-radius: 15px;
-}
-.titleKontakt{
+    background-image: linear-gradient(rgb(0, 238, 255),rgb(255, 0, 179));
     color: black;
     text-shadow: 2px 2px 5px white;
+    font-size: 30px;
     text-align: center;
-    font-size: 40px;
-    padding: 4%;
+    padding: 3%;
+    margin: 4%;
+    border-radius: 20px;
 }
 .kontaktBoks h4{
-    font-size: 25px;
-    text-shadow: 2px 2px 2px black;
-    padding: 2% 4%;
-}
-.kontaktBoks p {
     color: white;
-    text-shadow: 2px 2px 2px black;
-    padding: 2% 6%;
-    margin-bottom: 2%;
+    text-shadow: 2px 2px 5px black;
+    text-align: left;
+    font-size: 85%;
+    padding-bottom: 3%;
+}
+.kontaktBoks h3{
+    text-align: left;
+    margin: 2%;
 }
 .kontaktBoks a {
     color: white;
 }
 
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+        border-radius: 10px;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .skills{
+        min-height: auto;
+        color: black;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .pcVersion{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .topnav {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 4%;
+    }
+}
+
+
 
 /* CSS til personlig_arb.html */
 /* informatsion om Personlige arbejde */
 .mitB{
-    background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
-    padding: 2%;
+    background-image: linear-gradient(rgb(255, 0, 179),rgb(0, 238, 255));
+    color: black;
+    text-shadow: 2px 2px 5px white;
+    font-size: 30px;
+    text-align: center;
+    padding: 6%;
+}
+.mitB h4{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: left;
 }
 .mit{
     background-color: rgb(11, 4, 32);;
-    margin: 50px 25px;
-    border-radius: 15px;
-}
-.titleMit{
     color: white;
     text-shadow: 2px 2px 5px black;
+    font-size: 30px;
     text-align: center;
-    font-size: 40px;
-    padding: 4%;
-}
-.mit p{
-    text-shadow: 2px 2px 5px black;
-    padding: 4%;
+    padding: 3%;
+    margin: 4%;
+    border-radius: 20px;
 }
 .mitKnap{
     display: flex;
     justify-content: space-around;
-    padding: 8%;
+    padding: 5%;
 }
 .mitKnap a{
     background-color: rgb(255, 0, 179);
@@ -263,6 +303,7 @@ footer{
 .mitKnap a:hover {
     background-color: rgb(0, 238, 255);
     color: black;
+    text-shadow: 2px 2px 5px white;
 }
 
 /* Min Desingboks */
@@ -383,26 +424,34 @@ footer{
 
 
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+        border-radius: 10px;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
     .skills{
         min-height: auto;
         color: black;
     }
-   
-    .dropdown .dropbtn {
-        display: none;
-    }
-    .dropdown {
-        float: none;
-    }
-    .dropdown-content {
-        position: relative ; 
-    }
-    .dropdown .dropbtn {
-        display: block;
-        width: 100%;
-        text-align: left;
-    }
+
     
 
 }
