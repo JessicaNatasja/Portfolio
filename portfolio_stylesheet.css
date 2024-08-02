@@ -69,7 +69,7 @@ footer{
 }
 
 
-/* CSS til portfolio.html som er Forsiden */
+/* CSS til portfolio.html informatsion om Forsiden og om mig */
 .omkringMig{
     background-image: linear-gradient(rgb(255, 0, 179),rgb(0, 238, 255));
     color: black;
@@ -104,12 +104,10 @@ footer{
     height: 100px;
     margin: 2%;
 }
-
 /* boks så det står pænt  */
 .pcVersion{
     display: block;
 }
-
 /* Kodnings Skills */
 .skills{
     min-height: auto;
@@ -195,7 +193,6 @@ footer{
 .skills-column:nth-child(1) .skills-oplysning .fremskridt:nth-child(4) .bar span {
     width: 55%;
 }
-
 /* kontaktformular */
 .kontaktBoks{
     background-image: linear-gradient(rgb(255, 0, 179),rgb(0, 238, 255));
@@ -223,10 +220,7 @@ footer{
 }
 
 
-
-
-/* CSS til personlig_arb.html */
-/* informatsion om Personlige arbejde */
+/* CSS til personlig_arb.html informatsion om Personlige arbejde */
 .mitB{
     background-image: linear-gradient(rgb(255, 0, 179),rgb(0, 238, 255));
     color: black;
@@ -273,52 +267,83 @@ footer{
 
 /* Min Desingboks */
 .desingboks{
-    background-image: linear-gradient(rgb(255, 0, 179),rgb(255, 0, 179),rgb(0, 238, 255),rgb(0, 238, 255));
-    margin: 50px 25px;
-    border-radius: 15px;
-}
-.titleDesing{
+    background-image: linear-gradient(rgb(0, 238, 255),rgb(0, 238, 255), rgb(255, 0, 179),rgb(255, 0, 179));
     color: black;
     text-shadow: 2px 2px 5px white;
+    font-size: 30px;
     text-align: center;
-    font-size: 40px;
-    padding: 4%;
+    padding: 3%;
+    margin: 4%;
+    border-radius: 20px;
 }
-.desingboks p{
+.desingboks h4{
+    color: white;
     text-shadow: 2px 2px 5px black;
-    padding: 4%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: left;
 }
-.imgDesing{
-    text-align: center;
+.imgDesing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .imgDesing img{
-    margin: 2% 0% 5% 0%;
+    margin: 3%;
 }
 
 /* Min Desingboks */
 .skitseboks{
-    background-image: linear-gradient(rgb(0, 238, 255),rgb(0, 238, 255),rgb(255, 0, 179),rgb(255, 0, 179));
-    margin: 50px 25px;
-    border-radius: 15px;
-}
-.titleSkitse{
+    background-image: linear-gradient(rgb(255, 0, 179),rgb(255, 0, 179),rgb(0, 238, 255),rgb(0, 238, 255));
     color: black;
     text-shadow: 2px 2px 5px white;
+    font-size: 30px;
     text-align: center;
-    font-size: 40px;
-    padding: 4%;
+    padding: 3%;
+    margin: 4%;
+    border-radius: 20px;
 }
-.skitseboks p{
-    text-shadow: 2px 2px 5px black;
-    padding: 4%;
+.skitseboks h4{
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: left;
 }
 .imgSkitse{
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .imgSkitse img{
-    margin: 2% 0% 5% 0%;
+    margin: 3%;
 }
 
+/* kontaktformular blå først*/
+.kontaktBoks{
+    background-image: linear-gradient(rgb(0, 238, 255),rgb(255, 0, 179));
+    color: black;
+    text-shadow: 3px 3px 5px white;
+    font-size: 30px;
+    text-align: center;
+    padding: 3%;
+    margin: 4%;
+    border-radius: 20px;
+}
+.kontaktBoks h4{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    text-align: left;
+    font-size: 85%;
+    padding-bottom: 3%;
+}
+.kontaktBoks h3{
+    text-align: left;
+    margin: 2%;
+}
+.kontaktBoks a {
+    color: white;
+}
 
 
 /* CSS til alle_semestre.html 
@@ -438,5 +463,18 @@ footer{
         width: 330px;
         align-content: center;
     }
+    .mitB{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .mit a{
+        margin: 4%;
+        padding: 6%;
+        width: 160px;
+    }
+
+
+
 }
 
