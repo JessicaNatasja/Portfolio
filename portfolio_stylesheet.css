@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
 }
+
+
 /* farve valg 
 mørke blå
 rgb(11, 4, 32);
@@ -23,6 +25,7 @@ body {
     color: white;
 }
 
+
 /* Header over nav */
 .header {
     background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
@@ -34,7 +37,6 @@ body {
     margin: 4%;
     border-radius: 20px;
 }
-  
 /* Navigation bar*/
 .topnav {
     overflow: hidden;
@@ -58,7 +60,6 @@ body {
 .topnav .icon {
     display: none;
 }
-
 /* Footer */
 footer{
     padding: 10px;
@@ -67,7 +68,8 @@ footer{
     text-align: center;    
 }
 
-/* CSS til portfolio.html */
+
+/* CSS til portfolio.html som er Forsiden */
 .omkringMig{
     background-image: linear-gradient(rgb(255, 0, 179),rgb(0, 238, 255));
     color: black;
@@ -87,15 +89,20 @@ footer{
     background-color:rgb(11,4,32);
     border-radius: 10px;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
+}
+.infoIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2%;
 }
 .infoIcon p {
     font-family: 'Times New Roman', Times, serif;
     color: white;
     text-shadow: 2px 2px 5px black;
     height: 100px;
+    margin: 2%;
 }
 
 /* boks så det står pænt  */
@@ -106,7 +113,7 @@ footer{
 /* Kodnings Skills */
 .skills{
     min-height: auto;
-    background-color:rgb(0, 238, 255);
+    background-image: linear-gradient(rgb(0, 238, 255),rgb(255, 0, 179));
     padding: 3%;
     margin: 4%;
     border-radius: 20px;
@@ -142,7 +149,7 @@ footer{
     left: 0;
     width: 0;
     height: 100%;
-    background: rgb(255, 0, 179);
+    background: rgba(255, 255, 255, 0.3);
     z-index: -1;
     transition: .5s;
 }
@@ -191,7 +198,7 @@ footer{
 
 /* kontaktformular */
 .kontaktBoks{
-    background-image: linear-gradient(rgb(0, 238, 255),rgb(255, 0, 179));
+    background-image: linear-gradient(rgb(255, 0, 179),rgb(0, 238, 255));
     color: black;
     text-shadow: 2px 2px 5px white;
     font-size: 30px;
@@ -215,48 +222,6 @@ footer{
     color: white;
 }
 
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {
-        display: none;
-    }
-    .topnav a.icon {
-        float: right;
-        display: block;
-        border-radius: 10px;
-    }
-    .topnav.responsive {
-        position: relative;
-    }
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    .skills{
-        min-height: auto;
-        color: black;
-    }
-}
-
-@media screen and (min-width: 900px) {
-    .pcVersion{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .topnav {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        margin: 4%;
-    }
-}
 
 
 
@@ -355,8 +320,9 @@ footer{
 }
 
 
-/* CSS til alle_semestre.html */
-/* fremskridt */
+
+/* CSS til alle_semestre.html 
+/* fremskridt 
 .fremB{
     background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
     padding: 2%;
@@ -377,10 +343,7 @@ footer{
     text-shadow: 2px 2px 5px black;
     padding: 4%;
 }
-
-
-/* billeder til at komme hen på semesterne */
-
+ billeder til at komme hen på semesterne 
 .dropdown {
     overflow: hidden;
     text-align: center;
@@ -421,11 +384,9 @@ footer{
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-
+*/
 
 @media screen and (max-width: 600px) {
-
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -451,7 +412,31 @@ footer{
         min-height: auto;
         color: black;
     }
-
-    
-
 }
+
+@media screen and (min-width: 900px) {
+    .pcVersion{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .topnav {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 4%;
+    }
+    .infoIcon{
+        padding: 2%;
+    }
+    .infoIcon p {
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        text-shadow: 2px 2px 15px white;
+        height: 80px;
+        width: 330px;
+        align-content: center;
+    }
+}
+
