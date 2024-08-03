@@ -273,7 +273,7 @@ footer{
     font-size: 30px;
     text-align: center;
     padding: 3%;
-    margin: 4%;
+    margin: 2%;
     border-radius: 20px;
 }
 .desingboks h4{
@@ -284,9 +284,7 @@ footer{
     text-align: left;
 }
 .imgDesing {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
 }
 .imgDesing img{
     margin: 3%;
@@ -300,7 +298,7 @@ footer{
     font-size: 30px;
     text-align: center;
     padding: 3%;
-    margin: 4%;
+    margin: 2%;
     border-radius: 20px;
 }
 .skitseboks h4{
@@ -311,37 +309,36 @@ footer{
     text-align: left;
 }
 .imgSkitse{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
 }
 .imgSkitse img{
     margin: 3%;
 }
 
 /* kontaktformular blå først*/
-.kontaktBoks{
+.kontaktBoksB{
     background-image: linear-gradient(rgb(0, 238, 255),rgb(255, 0, 179));
     color: black;
     text-shadow: 3px 3px 5px white;
     font-size: 30px;
     text-align: center;
+    height: 360px;
     padding: 3%;
     margin: 4%;
     border-radius: 20px;
 }
-.kontaktBoks h4{
+.kontaktBoksB h4{
     color: white;
     text-shadow: 2px 2px 5px black;
     text-align: left;
     font-size: 85%;
     padding-bottom: 3%;
 }
-.kontaktBoks h3{
+.kontaktBoksB h3{
     text-align: left;
     margin: 2%;
 }
-.kontaktBoks a {
+.kontaktBoksB a {
     color: white;
 }
 
@@ -473,8 +470,30 @@ footer{
         padding: 6%;
         width: 160px;
     }
-
-
+    .pcVersionPr{
+        display: flex;
+        margin: 1%;
+    } 
+    .kontaktBoksB{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 220px;
+        padding: 0;
+        margin: 2%;
+    }
+    .kontaktBoksB h1{
+        width: 50%;
+        margin: 1%;
+    }
+    .boksDel{
+        width: 29%;
+        margin: 2%;
+        align-items: center;
+       
+    }
+    
+    
 
 }
 
