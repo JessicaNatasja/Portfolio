@@ -344,28 +344,28 @@ footer{
 
 
 /* CSS til alle_semestre.html 
-/* fremskridt 
-.fremB{
-    background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
-    padding: 2%;
-}
+/* fremskridt */
+
 .fremskridtboks{
-    background-color: rgb(11, 4, 32);
-    margin: 50px 25px;
-    border-radius: 15px;
+    background-image: linear-gradient(rgb(0, 238, 255),rgb(0, 238, 255), rgb(255, 0, 179),rgb(255, 0, 179));
+    color: black;
+    text-shadow: 2px 2px 5px white;
+    font-size: 30px;
+    text-align: center;
+    padding: 3%;
+    margin: 2%;
+    border-radius: 20px;
 }
-.titleFremskridt{
+.fremskridtboks h4{
     color: white;
     text-shadow: 2px 2px 5px black;
-    text-align: center;
-    font-size: 40px;
-    padding: 4%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: left;
 }
-.fremskridtboks p{
-    text-shadow: 2px 2px 5px black;
-    padding: 4%;
-}
- billeder til at komme hen på semesterne 
+
+
+/* billeder til at komme hen på semesterne  */
 .dropdown {
     overflow: hidden;
     text-align: center;
@@ -406,7 +406,7 @@ footer{
 .dropdown:hover .dropdown-content {
     display: block;
 }
-*/
+
 
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {
