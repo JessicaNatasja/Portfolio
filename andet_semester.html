@@ -4,11 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="semestre_stylesheet.css">
+ <script src="https://kit.fontawesome.com/1cc8df4c3e.js" crossorigin="anonymous"></script>
   <!-- logo vises i vinduet -->
-  <link rel="icon" href="img/portfolio_logo.png">
-  <title>Document</title>
+  <link rel="icon" href="img/logo_lyseBlue.png">
+  <title>Andet Semester</title>
 </head>
 <body>
+
+  <!-- Velkommens Header -->
+  <div class="header">
+    <h1>Velkommen<br></h1>
+    <h3>Til Andet Semester</h3>
+    <img class="headerimg" src="img/portfolio_logo.png" width="200px">
+    <h3>Af Jessica Natasja</h3>
+  </div>
+
+  <!-- Navigation bar -->
+  <div class="topnav" id="myTopnav">
+    <a href="portfolio.html" class="active">Forside</a>
+    <a href="personlig_arb.html">Personlige Arb.</a>
+    <a href="alle_semestre.html">Semestre</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer> 
+    <p>Copyright &COPY; 2024 by jessica-natasja.dk | All Rights Reserved.</p>
+  </footer>
+
+  <!-- JAVA SCRIPT  content -->
+    <!-- Navbar -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
 
     
 </body>

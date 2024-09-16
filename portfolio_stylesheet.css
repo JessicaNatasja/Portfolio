@@ -2,7 +2,13 @@
     margin: 0;
     padding: 0;
 }
-
+body {
+    margin: 0;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(11, 4, 32);
+    color: white;
+}
 
 /* farve valg 
 mørke blå
@@ -17,15 +23,7 @@ rgb(255, 0, 179)
 color: white;
 */
 
-body {
-    margin: 0;
-    font-size: 25px;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: rgb(11, 4, 32);
-    color: white;
-}
-
-
+/* Gentagene ting hen over alle siderne */
 /* Header over nav */
 .header {
     background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
@@ -68,8 +66,9 @@ footer{
     text-align: center;    
 }
 
+/* CSS til portfolio.html */
 
-/* CSS til portfolio.html informatsion om Forsiden og om mig */
+/* Overskrift boks omkring Forsiden og Om Mig */
 .omkringMig{
     background-image: linear-gradient(rgb(255, 0, 179),rgb(0, 238, 255));
     color: black;
@@ -85,6 +84,7 @@ footer{
     padding-bottom: 5%;
     text-align: left;
 }
+/* Icon til om mig */
 .imgMigInfo{
     background-color:rgb(11,4,32);
     border-radius: 10px;
@@ -104,11 +104,7 @@ footer{
     height: 100px;
     margin: 2%;
 }
-/* boks så det står pænt  */
-.pcVersion{
-    display: block;
-}
-/* Kodnings Skills */
+/* Kodnings Skills boks */
 .skills{
     min-height: auto;
     background-image: linear-gradient(rgb(0, 238, 255),rgb(255, 0, 179));
@@ -180,7 +176,7 @@ footer{
     border-radius: 4px;
     background-color: rgb(11, 4, 32);
 }
-/* fylde ind med procenter */
+/* Fylde ind med procenter */
 .skills-column:nth-child(1) .skills-oplysning .fremskridt:nth-child(1) .bar span {
     width: 85%;
 }
@@ -193,7 +189,7 @@ footer{
 .skills-column:nth-child(1) .skills-oplysning .fremskridt:nth-child(4) .bar span {
     width: 55%;
 }
-/* kontaktformular */
+/* kontaktformular på Forside */
 .kontaktBoks{
     background-image: linear-gradient(rgb(255, 0, 179),rgb(0, 238, 255));
     color: black;
@@ -218,9 +214,14 @@ footer{
 .kontaktBoks a {
     color: white;
 }
-
+/* Skills-boks og Kontaktformular lave til pc version  */
+.pcVersion{
+    display: block;
+}
 
 /* CSS til personlig_arb.html informatsion om Personlige arbejde */
+
+/* Overskrift boks */
 .mitB{
     background-image: linear-gradient(rgb(255, 0, 179),rgb(0, 238, 255));
     color: black;
@@ -246,6 +247,7 @@ footer{
     margin: 4%;
     border-radius: 20px;
 }
+/* Overskrift boks knapper */
 .mitKnap{
     display: flex;
     justify-content: space-around;
@@ -264,7 +266,6 @@ footer{
     color: black;
     text-shadow: 2px 2px 5px white;
 }
-
 /* Min Desingboks */
 .desingboks{
     background-image: linear-gradient(rgb(0, 238, 255),rgb(0, 238, 255), rgb(255, 0, 179),rgb(255, 0, 179));
@@ -273,7 +274,7 @@ footer{
     font-size: 30px;
     text-align: center;
     padding: 3%;
-    margin: 2%;
+    margin: 4%;
     border-radius: 20px;
 }
 .desingboks h4{
@@ -289,8 +290,7 @@ footer{
 .imgDesing img{
     margin: 3%;
 }
-
-/* Min Desingboks */
+/* Min Skitseboks */
 .skitseboks{
     background-image: linear-gradient(rgb(255, 0, 179),rgb(255, 0, 179),rgb(0, 238, 255),rgb(0, 238, 255));
     color: black;
@@ -298,7 +298,7 @@ footer{
     font-size: 30px;
     text-align: center;
     padding: 3%;
-    margin: 2%;
+    margin: 4%;
     border-radius: 20px;
 }
 .skitseboks h4{
@@ -314,8 +314,7 @@ footer{
 .imgSkitse img{
     margin: 3%;
 }
-
-/* kontaktformular blå først*/
+/* kontaktformular men blå først*/
 .kontaktBoksB{
     background-image: linear-gradient(rgb(0, 238, 255),rgb(255, 0, 179));
     color: black;
@@ -342,19 +341,16 @@ footer{
     color: white;
 }
 
+/* CSS til alle_semestre.html oversigt over semesterne*/
 
-/* CSS til alle_semestre.html 
-/* fremskridt */
-
+/* Overskrift boks */
 .fremskridtboks{
-    background-image: linear-gradient(rgb(0, 238, 255),rgb(0, 238, 255), rgb(255, 0, 179),rgb(255, 0, 179));
+    background-image: linear-gradient(rgb(255, 0, 179),rgb(0, 238, 255));
     color: black;
     text-shadow: 2px 2px 5px white;
     font-size: 30px;
     text-align: center;
-    padding: 3%;
-    margin: 2%;
-    border-radius: 20px;
+    padding: 6%;
 }
 .fremskridtboks h4{
     color: white;
@@ -363,52 +359,31 @@ footer{
     padding-bottom: 5%;
     text-align: left;
 }
-
-
 /* billeder til at komme hen på semesterne  */
 .dropdown {
     overflow: hidden;
     text-align: center;
     background-image: linear-gradient(rgb(255, 0, 179),rgb(0, 238, 255));
-    margin: 40px ;
-    border-radius: 15px;
+    margin: 4%;
+    padding: 2%;
+    border-radius: 20px;
+}
+.dropdown h4{
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px black;
 }
 .dropdown .dropbtn {
     border: none;
     outline: none;
-    padding: 20px;
+    padding: 4%;
     background-color: inherit;
     font-family: inherit;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
-    min-width: 303px;
-    margin: 0 5%;
-    box-shadow: 0px 10px 30px 0px rgb(255, 255, 255);
-    z-index: 1;
-}
-.dropdown-content a {
-    float: none;
-    color: white;
-    text-shadow: 2px 2px 5px black;
-    padding: 30px 10px;
-    margin: 5%;
-    background-color: rgb(11, 4, 32);;
-    text-decoration: none;
-    display: block;
-}
-.dropdown-content a:hover {
-    background-color: white;
-    color: black;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 
 @media screen and (max-width: 600px) {
+    /* navigatison knapper */
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -437,6 +412,7 @@ footer{
 }
 
 @media screen and (min-width: 900px) {
+    /* Forside redigering til pc */
     .pcVersion{
         display: flex;
         flex-wrap: nowrap;
@@ -460,6 +436,7 @@ footer{
         width: 330px;
         align-content: center;
     }
+    /* personlige arbejde redigering til pc*/
     .mitB{
         display: flex;
         flex-wrap: nowrap;
@@ -492,7 +469,20 @@ footer{
         align-items: center;
        
     }
-    
+    /* Semesterne redigering til pc*/
+    .pcVersionSM{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .dropdown{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .dropbtn{
+        width: 400px;
+    }
     
 
 }

@@ -2,6 +2,14 @@
     margin: 0;
     padding: 0;
 }
+body {
+  margin: 0;
+  font-size: 25px;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: rgb(11, 4, 32);
+  color: white;
+}
+
 /* farve valg 
 mørke blå
 rgb(11, 4, 32);
@@ -15,68 +23,41 @@ rgb(255, 0, 179)
 color: white;
 */
 
-body {
-  margin: 0;
-  font-size: 24px;
-  font-family: 'Times New Roman', Times, serif;
-  background-color: rgb(11, 4, 32);
-  color: white;
-}
-
-/* Header over Sticky nav */
+/* Gentagene ting hen over alle siderne */
+/* Header over nav */
 .header {
-  background-color: rgb(0, 238, 255);
+  background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
   color: black;
   text-shadow: 2px 2px 5px white;
-  padding: 10px;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
+  padding: 3%;
+  margin: 4%;
+  border-radius: 20px;
 }
-.headerimg{
-  margin: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.header h4 {
-  margin-bottom: 10px;
-}
-
-/* Sticky navigation bar*/
-#navbar {
+/* Navigation bar*/
+.topnav {
   overflow: hidden;
-  background-color: rgb(11, 4, 32);
-}
-#navbar a {
+  background-color: rgb(255, 0, 179);
+  margin: 4%;
+  border-radius: 20px;
+} 
+.topnav a {
   float: left;
   display: block;
-  color: white;
+  color: #f2f2f2;
   text-align: center;
-  padding: 10px;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 26px;
-  font-weight: bold;
+  font-size: 28px;
 }
-#navbar a:hover {
-  background-color: rgb(0, 238, 255);
-  color: black;
+.topnav a:hover {
+  background-color: rgb(11, 4, 32);
+  color: white;
+}   
+.topnav .icon {
+  display: none;
 }
-#navbar a.active {
-  background-color: rgb(0, 238, 255);
-  color: black;
-  font-size: 26px;
-  font-weight: bold;
-}  
-.content {
-  padding: 16px;
-}  
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}  
-.sticky + .content {
-  padding-top: 60px;
-}
-
 /* Footer */
 footer{
   padding: 10px;
@@ -85,27 +66,55 @@ footer{
   text-align: center;    
 }
 
-
-/* CSS til Første_semester.html */
-/* informatsion om mig */
-.overblik{
-  background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
-  margin: 50px 25px;
-  border-radius: 15px;
-}
-.titleOverblik{
+/* Informatison omkring flows */
+.mitB{
+  background-image: linear-gradient(rgb(255, 0, 179),rgb(0, 238, 255));
   color: black;
   text-shadow: 2px 2px 5px white;
+  font-size: 30px;
   text-align: center;
-  font-size: 40px;
-  padding: 4%;
+  padding: 6%;
 }
-.overblik p{
+.mitB h4{
+  color: white;
   text-shadow: 2px 2px 5px black;
-  padding: 4%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: left;
+}
+/* knap til navigation rundt flows */
+.mit{
+  background-color: rgb(11, 4, 32);;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  font-size: 30px;
+  border-radius: 20px;
+  margin: 4%;
+}
+.mitKnap{
+  display: flex;
+  justify-content: space-evenly;
+}
+.mitKnap a{
+  background-color: rgb(255, 0, 179);
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 5%;
+  margin: 2%;
+  border-radius: 15px;
+}
+.mitKnap a:hover {
+  background-color: rgb(0, 238, 255);
+  color: black;
+  text-shadow: 2px 2px 5px white;
+}
+.mitpc{
+  text-shadow: 2px 2px 5px black;
+  display:none;
 }
 
-/* flow overskrifter til de forskelige flow*/
+/* flows overskrifter til de forskelige flow*/
 .flowB{
   background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
   padding: 2%;
@@ -127,9 +136,16 @@ footer{
   padding: 4%;
   text-align: center;
 }
+.bunder-pil{
+  padding: 4%;
+  margin: 4%;
+  display: flex;
+  justify-content: center;
+}
 
-/* flow 1  */
-/* flow 1 standret ting*/
+/* CSS til Første_semester.html */
+
+/* FLOW 1 standret ting ( bokse / skrift / farve)*/
 .flow1{
   background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
   margin: 50px 25px; 
@@ -159,7 +175,6 @@ footer{
   text-shadow: 2px 2px 5px black;
   text-align: center;
 }
-
 /* billeder i flow 1 */
 .flow1img{
   padding: 3px;
@@ -168,8 +183,7 @@ footer{
   margin: 5% 11% ;
   padding-bottom: 4%;
 }
-
-/* billede tranformatison  */
+/* billede som tranformatison */
 .flow1ToIEn{
   position: relative;
   display: flex;
@@ -193,7 +207,6 @@ footer{
 .flow1ToIEn:hover .overlay {
   opacity: 1;
 }
-
 /* rolle billeder flow 1 */
 .scroll-container {
   text-align: center;
@@ -206,9 +219,7 @@ footer{
   padding: 10px;
 }
 
-
-
-/* flow 2 */
+/* FLOW 2 */
 /* flow 2 standret ting */
 .flow2{
   background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
@@ -235,7 +246,6 @@ footer{
   text-shadow: 2px 2px 5px black;
   padding: 4%;
 }
-
 /* Lp cover og plade billede */
 .teaser{
   margin: 2%; 
@@ -260,35 +270,39 @@ footer{
   transform: translate(10rem) rotateZ(30deg);
   filter: brightness(100%);
 }
-
-/* billeder i flow 1 */
+/* billederne i Færdige Versions boks */
 .færdigVersion{
   margin: 5% 11% ;
   padding-bottom: 4%;
 }
 
+/* FLOW 3 */
+/* flow 3 standret ting ( bokse / skrift / farve)*/
 
+/* FLOW 4 */
+/* flow 4 standret ting ( bokse / skrift / farve)*/
+
+/* FLOW 5 */
+/* flow 5 standret ting ( bokse / skrift / farve)*/
 
 
 
 
 
 /* CSS til Andet_semester.html */
-/* informatsion om mig */
+
+/* FLOW 1 */
+/* flow 1 standret ting ( bokse / skrift / farve)*/
 
 
-
-
-
-/* CSS til Tredje og Fjerde semester */
-/* vente side */
+/* CSS til Tredje_semester.html og Fjerde_semester.html */
+/* Pause side  */
 .comingSoon{
     background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
     margin: 30px 25px;
     border-radius: 15px;
     height: 795px;
 }
-
 .titleComingSoon{
     color: black;
     text-shadow: 2px 2px 5px white;
@@ -318,5 +332,47 @@ footer{
     color: black;
 }
 
+@media screen and (max-width: 600px) {
+  /* navigatison knapper */
+  .topnav a:not(:first-child) {
+      display: none;
+  }
+  .topnav a.icon {
+      float: right;
+      display: block;
+      border-radius: 10px;
+  }
+  .topnav.responsive {
+      position: relative;
+  }
+  .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+  .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+ 
+}
 
+@media screen and (min-width: 900px) {
+  /* navigatison*/
+  .topnav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 4%;
+  }
 
+  /* knapper til navigation rundt flows */
+  .mit{
+    display: none;
+  }
+  .mitpc{
+    display: block;
+  }
+
+}

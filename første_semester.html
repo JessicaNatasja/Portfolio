@@ -4,35 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="semestre_stylesheet.css">
-    <!-- logo vises i vinduet -->
-    <link rel="icon" href="img/portfolio_logo.png">
+    <script src="https://kit.fontawesome.com/1cc8df4c3e.js" crossorigin="anonymous"></script>
+  <!-- logo vises i vinduet -->
+    <link rel="icon" href="img/logo_lyseBlue.png">
     <title>Første Semester</title>
 </head>
 <body>
 
-  <!-- Velkommens Header -->
+<!-- Velkommens Header -->
   <div class="header">
     <h1>Velkommen<br></h1>
-    <h3>til 1.Semester</h3>
-    <h4>Af Jessica Natasja</h4>
+    <h3>Til Første Semester</h3>
+    <img class="headerimg" src="img/portfolio_logo.png" width="200px">
+    <h3>Af Jessica Natasja</h3>
   </div>
 
-  <!-- Sticky navigation bar -->
-  <div id="navbar">
-    <a class="active" href="portfolio.html">Forside</a>
+<!-- Navigation bar -->
+  <div class="topnav" id="myTopnav">
+    <a href="portfolio.html" class="active">Forside</a>
     <a href="personlig_arb.html">Personlige Arb.</a>
     <a href="alle_semestre.html">Semestre</a>
-  </div> 
-  
-  <!-- Flow 1 -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+<!-- informatison omkring flows og knapper -->
+  <div class="mitB" id="top">
+    <div>
+      <h1>Flows</h1>
+      <h4> 
+        Her kan i finde alle de opgaver jeg har lavet på første semester, 
+        de er delt op i 5 flow, som i ville kunne gavigere rundt i.
+      </h4>  
+    </div>
+  </div>
+
+  <div class="mit">
+    <div class="mitKnap">
+      <a href="#flow1">Flow 1</a>
+      <a href="#flow2">Flow 2</a>
+      <a href="#flow3">Flow 3</a>
+    </div>
+    <div class="mitKnap">
+      <a href="#flow4">Flow 4</a>
+      <a href="#flow5">Flow 5</a> 
+    </div>
+  </div>
+
+  <div class="mitpc">
+    <div class="mitKnap">
+      <a href="#flow1">Flow 1</a>
+      <a href="#flow2">Flow 2</a>
+      <a href="#flow3">Flow 3</a>
+      <a href="#flow4">Flow 4</a>
+      <a href="#flow5">Flow 5</a> 
+    </div>
+  </div>
+
+<!-- Flow 1 overskrift -->
   <div class="flowB" id="flow1">
     <div class="flow">
     <h3>Flow 1</h3>
     <p>DIGITAL BILLEDE BEHANDLING OG WEBPROTOYPE</p>
     <p>Særligt fokus på Adobe Photoshop og Figma</p>
-    </div>  
+    <div class="bunder-pil">
+      <a href="#top"><i class="fa-solid fa-chevron-up fa-bounce fa-2xl" style="color: white;"></i></a>
+    </div>
+    </div>
+
   </div>
- 
+<!-- Flow 1 -->
   <div class="flow1">
     <h3 class="titleFlow">Billede Behandling</h3>
     <h2>Mad shot</h2>
@@ -92,15 +134,18 @@
     </div>
   </div>
    
-  <!-- Flow 2 -->
+<!-- Flow 2 overskrift -->
   <div class="flowB" id="flow2">
     <div class="flow">
       <h3>Flow 2</h3>
       <p>VISUELT KONCEPT TIL DIGITALE OG PRINTEDE MEDIER</p>
       <p>Særligt fokus på Adobe Photoshop, inlustrater og Figma</p>
+      <div class="bunder-pil">
+        <a href="#top"><i class="fa-solid fa-chevron-up fa-bounce fa-2xl" style="color: white;"></i></a>
+      </div>
     </div> 
   </div>
-    
+<!-- Flow 2 -->  
   <div class="flow2">
     <h3 class="titleFlow">Visuelt Koncept</h3>
     <p> 
@@ -159,7 +204,7 @@
     
   </div>
 
-  <div class="flow1">
+  <div class="flow2">
     <h3 class="titleFlow">Webprotoype</h3>
     <h2>Studerende event</h2>
     <p> 
@@ -175,27 +220,56 @@
       <img src="img_1.s/figma_f2/web_figma_bander.png"  width="300" >
     </div>
   </div>
-  
+
+  <!-- Flow 3 Overskrift-->
+  <div class="flowB" id="flow3">
+    <div class="flow">
+      <h3>Flow 3</h3>
+      <p>VISUELT KONCEPT TIL DIGITALE OG PRINTEDE MEDIER</p>
+      <p>Særligt fokus på Adobe Photoshop, inlustrater og Figma</p>
+      <div class="bunder-pil">
+        <a href="#top"><i class="fa-solid fa-chevron-up fa-bounce fa-2xl" style="color: white;"></i></a>
+      </div>
+    </div> 
+  </div>
+  <!-- Flow 4 Overskrift -->
+  <div class="flowB" id="flow4">
+    <div class="flow">
+      <h3>Flow 4</h3>
+      <p>VISUELT KONCEPT TIL DIGITALE OG PRINTEDE MEDIER</p>
+      <p>Særligt fokus på Adobe Photoshop, inlustrater og Figma</p>
+      <div class="bunder-pil">
+        <a href="#top"><i class="fa-solid fa-chevron-up fa-bounce fa-2xl" style="color: white;"></i></a>
+      </div>
+    </div> 
+  </div>
+  <!-- Flow 5 Overskrift-->
+  <div class="flowB" id="flow5">
+    <div class="flow">
+      <h3>Flow 5</h3>
+      <p>VISUELT KONCEPT TIL DIGITALE OG PRINTEDE MEDIER</p>
+      <p>Særligt fokus på Adobe Photoshop, inlustrater og Figma</p>
+      <div class="bunder-pil">
+        <a href="#top"><i class="fa-solid fa-chevron-up fa-bounce fa-2xl" style="color: white;"></i></a>
+      </div>
+    </div> 
+  </div>
+
+
   <!-- Footer -->
   <footer> 
     <p>Copyright &COPY; 2024 by jessica-natasja.dk | All Rights Reserved.</p>
   </footer>
     
   <!-- JAVA SCRIPT  content -->
-    <!-- Sticky Navbar -->
+    <!-- Navbar -->
     <script>
-      // Når brugeren ruller ned på siden, ativer myFunction.
-      window.onscroll = function() {myFunction()};
-        
-      var navbar = document.getElementById("navbar");
-      var sticky = navbar.offsetTop;
-        
-      // Tilføjer sticky class til navbar når du kommer til dens stilling. Fjern "sticky" når du forlader dens stilling.
       function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky")
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
         } else {
-          navbar.classList.remove("sticky");
+          x.className = "topnav";
         }
       }
     </script>
