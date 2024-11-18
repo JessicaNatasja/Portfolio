@@ -413,10 +413,13 @@ footer{
 
 @media screen and (min-width: 900px) {
     /* Forside redigering til pc */
+    .header{
+        margin: 2%;
+        padding: 2%;
+    }
     .pcVersion{
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-around;
         align-items: center;
     }
     .topnav {
@@ -470,10 +473,13 @@ footer{
        
     }
     /* Semesterne redigering til pc*/
+    .PcVerSem{
+        display: flex;
+    }
     .pcVersionSM{
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        justify-content: space-evenly;
     }
     .dropdown{
         display: flex;
@@ -484,6 +490,4 @@ footer{
         width: 400px;
     }
     
-
 }
-

@@ -277,14 +277,88 @@ footer{
 }
 
 /* FLOW 3 */
-/* flow 3 standret ting ( bokse / skrift / farve)*/
+/* flow 3 standret ting */
+.flow3{
+  background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
+  margin: 50px 25px; 
+  border-radius: 15px;
+}
+.titleFlow{
+  color: black;
+  text-shadow: 2px 2px 5px white;
+  text-align: center;
+  font-size: 40px;
+  padding: 5%;
+}
+.flow3 p{
+  text-shadow: 2px 2px 5px black;
+  padding: 4%;
+}
+.flow3 h2{
+  color: black;
+  text-shadow: 2px 2px 5px white;
+  padding: 4%;
+}
+.flow3 li{
+  text-shadow: 2px 2px 5px black;
+  padding: 4%;
+}
 
 /* FLOW 4 */
 /* flow 4 standret ting ( bokse / skrift / farve)*/
+.flow4{
+  background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
+  margin: 50px 25px; 
+  border-radius: 15px;
+}
+.titleFlow{
+  color: black;
+  text-shadow: 2px 2px 5px white;
+  text-align: center;
+  font-size: 40px;
+  padding: 5%;
+}
+.flow4 p{
+  text-shadow: 2px 2px 5px black;
+  padding: 4%;
+}
+.flow4 h2{
+  color: black;
+  text-shadow: 2px 2px 5px white;
+  padding: 4%;
+}
+.flow4 li{
+  text-shadow: 2px 2px 5px black;
+  padding: 4%;
+}
 
 /* FLOW 5 */
 /* flow 5 standret ting ( bokse / skrift / farve)*/
-
+.flow5{
+  background-image: linear-gradient(rgb(0, 238, 255), rgb(255, 0, 179));
+  margin: 50px 25px; 
+  border-radius: 15px;
+}
+.titleFlow{
+  color: black;
+  text-shadow: 2px 2px 5px white;
+  text-align: center;
+  font-size: 40px;
+  padding: 5%;
+}
+.flow5 p{
+  text-shadow: 2px 2px 5px black;
+  padding: 4%;
+}
+.flow5 h2{
+  color: black;
+  text-shadow: 2px 2px 5px white;
+  padding: 4%;
+}
+.flow5 li{
+  text-shadow: 2px 2px 5px black;
+  padding: 4%;
+}
 
 
 
@@ -374,5 +448,9 @@ footer{
   .mitpc{
     display: block;
   }
+  .mitB{
+    padding: 2%;
+  }
+ 
 
 }

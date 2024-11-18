@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif
+}
+/*farver 
+ rgb(0,41,69) blå
+#f0b440 mørkegul
+rgb(228, 187, 129) lysgul
+*/
+
+/*buger menu*/
+.topnav {
+    overflow: hidden;
+    background-color: #f0b440;
+    display: flex;
+     justify-content: flex-end; 
+}
+.topnav a {
+    color: rgb(0, 41, 69);
+    text-decoration: none;
+    padding:15px;
+}
+.topnav a:hover {
+    background-color: rgb(0,41,69);
+    color: white;
+}
+.topnav .icon {
+    display: none;
+    
+}
+.topnavresponsive {
+    overflow: hidden;
+    background-color: #f0b440;
+    display: flex;
+}
+.topnavresponsive a {
+    color: rgb(0, 41, 69);
+    text-decoration: none;
+    padding:15px;
+}
+.topnavresponsive a:hover {
+    background-color: rgb(0,41,69);
+    color: white;
+}
+
+/* forsiden instillier*/
+
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container{
+    margin-bottom: 15px;
+}
+
+.tekst{
+    background: rgb(228, 187, 129);
+    height: 250px;
+    width: auto;
+    margin: 15px;   
+}
+
+.latekst{
+    margin: 2%;
+    color:  rgb(0,41,69);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: larger; 
+}
+
+.alex-vanopslagh-gul{
+    margin: 10% 30% ;
+    color: #f0b440;
+    font-size: medium;
+    
+}
+
+.banner{
+    background: rgb(0,41,69);
+    display: none;
+    
+}
+.foodere{
+    background-color: rgb(0,41,69);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.foodere div{
+    display: grid;
+    margin: 20px;
+    justify-content: space-evenly
+    
+
+}
+.foodere a{
+    color: rgb(0, 0, 0);
+    background-color: #f0b440;
+    padding: 10px;
+    
+}
+.foodere a:hover {
+    background-color: rgb(0,41,69);
+    color: white;
+}
+.foodere a.active {
+    background-color: rgb(0,41,69);
+    color: white;
+}
+
+.reklame{
+    display: none;
+    background-color: #f0b440;
+}
+
+/* kontaktside instillier*/
+
+.imgk{
+    height: 300px;
+}
+
+.kontakt{
+    margin: 5%;
+}
+
+.o1{
+    color: rgb(0,41,69) ;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.o2{
+    color: rgb(0,41,69) ;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.o3{
+    color: rgb(0,41,69) ;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.kontakblok{
+    display: none;
+    background-color: rgb(0, 41, 69);
+}
+
+/* pressebilleder instillier*/
+
+.imgp{
+    height: 300px;
+}
+
+.Presse{
+    margin: 5%;
+}
+
+.blok1{
+    margin: 5%;
+    height: 250px;
+    background-color: rgb(0,41,69);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.blok2{
+    margin: 5%;
+    height: 250px;
+    background-color: rgb(0,41,69);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.blok3{
+    margin: 5%;
+    height: 250px;
+    background-color: rgb(0,41,69);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.blok4{
+    margin: 5%;
+    height: 250px;
+    background-color: rgb(0,41,69);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.gulnavn1{
+    padding-top:55px;
+    color: #f0b440;
+}
+.gulnavn2{
+    padding-top:55px;
+    color: #f0b440;
+}
+.gulnavn3{
+    padding-top:55px;
+    color: #f0b440;
+}
+.gulnavn4{
+    padding-top:55px;
+    color: #f0b440;
+}
+
+.blok1 a{
+    color: rgb(0, 0, 0);
+    background-color: #f0b440;
+    padding: 15px;
+}
+.blok2 a{
+    color: rgb(0, 0, 0);
+    background-color: #f0b440;
+    padding: 15px;
+}
+.blok3 a{
+    color: rgb(0, 0, 0);
+    background-color: #f0b440;
+    padding: 15px;
+}
+.blok4 a{
+    color: rgb(0, 0, 0);
+    background-color: #f0b440;
+    padding: 15px;
+}
+
+/*formanden instillier*/
+
+.mandimg{
+    display: flex;
+    flex-wrap: wrap;
+}
+.imgf{
+    height: 300px;
+}
+
+.imgf2{
+    display: none;
+}
+
+.partileder{
+    margin: 5%;
+}
+
+.alexgul{
+    color: #9b6f18;
+}
+
+.blåblok{
+    background-color: rgb(0,41,69);
+    height: 200px;
+}
+
+.storgulnavn{
+    color: #f0b440;
+    font-size: x-large;
+    text-align: center;
+    padding-top:50px ;
+}
+.lillegulnavn{
+    color: #f0b440;
+    font-size: large;
+    text-align: center;
+}
+
+.omalex{
+    margin: 5%;
+}
+
+/* nyt stylshett for over 600px*/ 
+/* media query  ipad*/
+@media screen and (min-width: 600px){
+
+    /* buger menu*/
+
+    .topnav .icon {
+        display:block;
+        font-size: 1rem;
+    }
+    .topnav a {
+        display:none;
+    }
+    .topnavresponsive a {
+        display:block;
+        font-size: 1rem;
+    }
+   .topnavresponsive {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    }
+   .topnavresponsive .icon {
+    position:absolute;
+    top:0;
+    right:0;
+   }
+
+   /* forside instillier*/
+   .logo{
+        justify-content: center;
+    }
+
+   .container{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .tekst{
+        display: block;
+        width: 45%;
+        margin:2% 0% 2% 5%;
+    }
+    .latekst{
+        font-size: x-large;
+        margin: 13%;
+
+       
+    }   
+    .tekstimg{
+        display: none;
+        
+    }
+
+    .foodere{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 5%;
+
+    }
+    .foodere div{
+        width: 20%;
+        
+    }
+
+   .banner{
+        width: 45%;
+        display: block;
+        margin:2% 2% 2% 0%;
+        height: 250px;
+    }
+    .alex-vanopslagh-gul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .reklame{
+        display: block;
+        padding: 60px;
+    }
+
+    .reklame p {
+        text-align: center;
+        color: rgb(0,41,69);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: xx-large;
+    }
+    
+    /* kontaktside instillier*/
+
+    .o1{
+        font-size: 50px;
+    }
+
+    .kontakblok{
+        display: block;
+        padding: 60px;
+    }
+
+    .kontakblok p {
+        text-align: center;
+        color: #f0b440;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: xx-large;
+    }
+
+    .h1{
+        font-size: larger;
+    }
+    .h2{
+        font-size: large;
+    }
+
+    /* pressebilleder instillier*/
+
+    .p1{
+        font-size: large;
+    }
+
+    .gulnavn1{
+        font-size: xx-large;
+    }
+    .gulnavn2{
+        font-size: xx-large;
+    }
+    .gulnavn3{
+        font-size: xx-large;
+    }
+    .gulnavn4{
+        font-size: xx-large;
+    }
+    
+    /*formanden instillier*/
+
+    .imgf{
+        width: 50%;
+    }
+    
+    .imgf2{
+        display: block;
+        height: 300px;
+        width: 50%;
+    }
+
+    .alexgul{
+        font-size: large;
+    }
+
+
+}
+
+/* nyt stylshett for over 1255px 
+ media query stop med at vokse */
+@media screen and (min-width: 1070px){
+    .body{
+        max-width: 1255px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+ 

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- logo vises i vinduet -->
+    <link rel="icon" href="img/portfolio_logo.png">
+    <title>Mine Projekter - Portefølje</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Din Portefølje</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="projekter.html">Projekter</a></li>
+                <li><a href="#om-mig">Om Mig</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h1 class="page-title animated">Mine Projekter</h1>
+        
+        <div class="project-grid">
+            <div class="project-card animated">
+                <img src="projekt1.jpg" alt="Projekt 1" class="project-image">
+                <div class="project-info">
+                    <h2 class="project-title">Projekt 1</h2>
+                    <p class="project-description">Kort beskrivelse af projekt 1. Her kan du fortælle om projektets mål, teknologier og resultater.</p>
+                    <a href="#" class="project-link">Se Mere</a>
+                </div>
+            </div>
+
+            <div class="project-card animated">
+                <img src="projekt2.jpg" alt="Projekt 2" class="project-image">
+                <div class="project-info">
+                    <h2 class="project-title">Projekt 2</h2>
+                    <p class="project-description">Kort beskrivelse af projekt 2. Fremhæv dine færdigheder og de udfordringer, du overvandt.</p>
+                    <a href="#" class="project-link">Se Mere</a>
+                </div>
+            </div>
+
+            <div class="project-card animated">
+                <img src="projekt3.jpg" alt="Projekt 3" class="project-image">
+                <div class="project-info">
+                    <h2 class="project-title">Projekt 3</h2>
+                    <p class="project-description">Kort beskrivelse af projekt 3. Vis din alsidighed og kreativitet gennem dine projekter.</p>
+                    <a href="#" class="project-link">Se Mere</a>
+                </div>
+            </div>
+
+            <!-- Du kan tilføje flere projektkort her -->
+        </div>
+    </div>
+
+
+    <script>
+        const navSlide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-links li');
+
+            burger.addEventListener('click', () => {
+                // Toggle Nav
+                nav.classList.toggle('nav-active');
+
+                // Animate Links
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = '';
+                    } else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                    }
+                });
+
+                // Burger Animation
+                burger.classList.toggle('toggle');
+            });
+        }
+
+        navSlide();
+    </script>
+
+
+</body>
+</html>

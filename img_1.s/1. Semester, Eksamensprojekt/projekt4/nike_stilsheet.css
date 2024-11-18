@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:  #696969;
+    font-family: 'Times New Roman', Times, serif
+}
+
+
+
+/* forside*/
+
+.overst{
+    display: flex;
+    background-color: black;
+}
+
+
+.nikeo{
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
+    padding: 20px;
+    font-family: oblique ;
+    margin-left: 30%;
+}
+
+.vibaugrund{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.foto{
+    justify-content: center; 
+}
+
+header{
+    padding: 20px;
+}
+
+header a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: larger;
+    margin: 142px;
+}
+
+header a:hover{
+    background-color: rgb(49, 49, 49);
+}
+.contenersko{
+    display: flex;
+    justify-content: center;
+}
+.niketekst{
+    padding: 50px;
+    margin: 5%;
+    background-color: #cac9c9;
+    justify-content: space-evenly
+}
+.mål{
+
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+.tabelcontener{
+    display: flex;
+    justify-content: center;
+    
+}
+.tabelcontener img{
+    padding: 5%;
+    justify-content: center;
+}
+
+.tabelteks{
+    
+    justify-content: center;
+    padding: 2%;
+    display: flex;
+}
+
+.tabelteks p{
+    justify-content: center;
+    padding: 10px;
+}
+
+.salgtekst{
+    padding: 20px;
+    background-color: #464545;
+    display: grid;  
+    margin: 5%
+}
+
+.overskrift{
+    font-size: x-large;
+    margin: 20px;
+    color: rgb(209, 209, 209);
+}
+
+.h1{
+    color: rgb(209, 209, 209);
+    font-size: larger;
+}
+
+.h2{
+    color: rgb(199, 199, 199);
+}
+
+.h3{
+    color: rgb(209, 209, 209);
+}
+
+.skoreklame{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+.imgtekst{
+    margin: auto;
+}
+
+.u1{
+    color: rgb(209, 209, 209);
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
+
+.yb{
+    display: flex;
+    justify-content: center;
+}
+
+.overs{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    color: white;
+}
+.unders{
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    color: white;
+    margin: 1% 10% 10% 10%;
+
+}

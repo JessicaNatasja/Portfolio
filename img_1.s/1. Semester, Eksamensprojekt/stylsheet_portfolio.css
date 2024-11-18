@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+/*farver */
+/* rgb(69, 0, 33)
+   #f6c157
+*/
+
+/*buger menu*/
+.overblik{
+    background-color: #6f0027;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+.overblik a{
+    color: #ffbb34;
+    text-decoration: none;
+    font-size: larger;
+    padding: 20px;
+    
+}
+.overblik a:hover {
+    background-color: #4a011b;
+    color: #ce8a00;
+}
+
+/*forside*/
+
+.informatsionimg{
+    background-color: rgb(111, 0, 39);
+    padding: 15px;
+    margin: 2%; 
+}
+
+.info{
+    margin: 3%;
+    
+}
+
+.udvikling{
+    margin: 2%;
+}
+
+/*første semester */
+
+#bw .o2{
+    font-size: x-large;
+    margin: 1%;
+}
+#bw p {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    font-size: large;
+}
+
+.webdesignpc{
+    display: none;
+}
+
+#vk .o2{
+    font-size: xx-large;
+    margin: 1%;
+}
+#vk p {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    font-size: large;
+}
+
+#bf .o3 {
+    font-size: xx-large;
+    margin: 1%;
+}
+
+#bf p {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    font-size: large;
+}
+
+#sv .o4{
+    font-size: xx-large;
+    margin: 1%;
+}
+
+#sv p {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    font-size: large;
+}
+.bygbilleder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#ta .o5{
+    font-size: xx-large;
+    margin: 1%;
+}
+
+#ta p {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    font-size: large;
+}
+
+/* egen projekter siden*/
+.h1{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    margin: 1%;
+}
+.egen p {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+#logo p {
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+}
+#plakat p {
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+    
+}
+
+/*udviklings siden */
+.uv p{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ude{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+}
+.sg {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+}
+.ws{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;
+}
+.wbss{
+    display: none;
+}
+.style{
+    display: none;
+}
+
+
+/* nyt stylshett for over 1308px 
+media query stop med at vokse */
+@media screen and (min-width: 600px){
+    
+   /*buger menu */
+
+    .overblik a{
+        color: #ffbb34;
+        text-decoration: none;
+        font-size: larger;
+        padding: 25px;  
+    }
+
+    /* forside*/
+
+    .informatsion {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .informatsionimg{
+        padding: 3%;
+        margin: 2% 5% 2% 45% 
+    }
+    .info{
+        margin: 5% 2% 2% 30%;
+        font-size: large;
+    }
+    .overblik{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .udvikling{
+        margin: 2%;
+        font-size: larger;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*første semester*/
+
+    #bw{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .webdesign{
+        display: none;
+    }
+    .webdesignpc{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    #vk{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 7%;
+    }
+    #bf{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 7%;
+    }
+    .bygbilleder1{
+        padding: 4%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .bygbilleder{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #sv{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 9%;
+    }
+
+    /*første egen projekter*/
+
+    .logoimg{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+    .plakatimg{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+
+    /*udviklings siden */
+    .ude{
+        font-size: x-large;
+    }
+    .opstiling{
+        display: flex;
+        justify-content: center;
+    }
+    .stil{
+        display: none;
+    }
+    .style{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .wbsl{
+        display: none;
+    }
+    .wbss{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+        
+
+}
+
+
+
+
+/* nyt stylshett for over 1255px 
+media query stop med at vokse */
+@media screen and (min-width: 1400px){
+    .body{
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+}
